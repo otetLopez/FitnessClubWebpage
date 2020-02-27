@@ -1,72 +1,156 @@
+/* Styles for the Mobile-First Strategy */
+
+
+
+/* Styles for the body element */
 body {
   background-color: #ffff99;
 }
 
-/* Styles for the container ID */
+/* Styles for fluid image */
+img {
+  max-width: 100%
+}
 
+/* Styles for the container ID */
 #container {
-  width: 80%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
+/* Styles for header section */
 header{
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 0.2em;
   background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow:  12px 12px 12px #404040;
+  border-radius: 0.5em;
+  text-align: center;
 }
 
+/* Styles for the navigation */
 nav {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1.25em;
   font-weight: bold;
   text-align: center;
-  padding: 15px;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  border-radius: 20px;
-  border-top: 5px solid #ffffff;
-  border-bottom: 5px solid #ffffff;
 }
 
+/* Add styles for the unordered lists in the navigation */
+nav ul {
+  padding: 0;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* Add styles for the list items in the navigation */
+nav li {
+  background-color: #009933;
+  border-radius: 2em;
+  list-style-type: none;
+  margin: 0.3em;
+  padding: 0.4em;
+}
+
+nav li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Add styles for the mobile class */
+.mobile {
+  display: inline;
+}
+
+.desktop
+  display: none;
+}
+
+
+/* Styles for the main div */
 main {
-  display: block;
   font-family: Verdana, Arial, sans-serif;
   font-size: 1em;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  padding: 20px;
-  border-radius: 10px;
+  margin-top: 0.5em;
+  padding: 1em;
+  border-radius: 1em;
   background-color: #ffffff;
-  box-shadow: 12px 12px 12px #404040;
+  border-top: solid 0.2em #009933;
+  border-bottom: solid 0.2em #009933;
 }
 
+/* Styles for the footer */
 footer {
   font-size: 0.7em;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 2em;
 }
 
+/* Styles for the table class */
+.tablet {
+  display: none;
+}
+
+/* Styles for the equip class */
 .equip {
-  float: left;
-  margin-right: 20px;
+display: none;
 }
 
+/* Clear float for the heading coming after the exuip class that is float left */
 /* h1 {
   clear: left;
 } */
 
-ul {
-  margin-bottom: 50px;
-  list-style-position: inside;
+/* Media Query for the tablet view port targets screen only */
+/* Minimum width is 481px */
+@media only screen and (min-width: 481px) {
+/* styles specifies the horizontal display for the nav li */
+nav li {
+  display: inline;
+  float: left;
+  margin-left: 1%;
+  margin-right: 1%;
+  padding-left: 0;
+  padding-right: 0;
+  width: 18%;
 }
 
+main {
+  clear: left;
+  margin-top: 4em;
+}
+
+.mobile {
+  display: none;
+}
+
+.desktop {
+  display: inline;
+}
+
+.equip {
+  display: inline;
+  float: left;
+  margin-right: 1.5em;
+}
+
+.items {
+  display: block;
+  list-style-position: inside;
+  margin-bottom: 5em;
+}
+
+.tablet {
+  display: block;
+}
+
+/* Styles for the dt */
 dt {
   font-weight: bold;
+  margin-top: .7em;
 }
 
 dd {
-  margin-bottom: 20px;
+  margin-bottom: 1.5em;
+}
+
 }
